@@ -1,0 +1,161 @@
+<!--
+==================================================================
+  EBOOK PAGE TEMPLATE — HOW TO USE
+==================================================================
+1. Copy this whole "_template" folder and rename the COPY to your
+   new ebook's slug, e.g. "copilot-for-sales" (lowercase, hyphens,
+   no spaces). The folder name becomes the URL:
+   zerobusyworkbooks.com/ebooks/copilot-for-sales/
+
+2. In the copy, replace every {{PLACEHOLDER}} below with your real
+   text. Search for "{{" to find them all.
+
+3. Delete this instructions comment block once you're done.
+
+4. Add a matching card for this ebook on the homepage (/index.html)
+   — copy one of the existing <a class="book-card"> blocks, point
+   its href at your new folder, and fill in the same details.
+
+5. Get this product's Razorpay Payment Button embed code from your
+   Razorpay Dashboard → Payment Buttons, and paste it where marked
+   below, replacing the placeholder comment.
+
+6. Push the changes (see the README.md at the root of this project
+   for the GitHub + Netlify steps) — the live site updates itself.
+==================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{EBOOK TITLE}} — ZeroBusyWork</title>
+<meta name="description" content="{{ONE-SENTENCE DESCRIPTION FOR SEARCH ENGINES AND SOCIAL SHARES}}">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo">ZeroBusyWork</a>
+    <nav>
+      <a href="/#books">All Ebooks</a>
+    </nav>
+  </div>
+</header>
+
+<section class="ebook-hero">
+  <div class="wrap">
+    <div class="eyebrow">{{WHO IT'S FOR, e.g. "For Sales Managers & Account Execs"}}</div>
+    <h1>{{HEADLINE — the big promise, one sentence}}</h1>
+    <p class="subhead">{{SUBHEAD — 2 sentences expanding on the promise and what they get}}</p>
+    <a href="#buy" class="btn">{{CTA BUTTON TEXT, e.g. "Get Instant Access"}}</a>
+    <span class="fineprint">Instant PDF download · 30-day money-back guarantee</span>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <h2>The problem</h2>
+    <p>{{1-2 paragraphs describing the pain your reader feels today}}</p>
+    <ul class="feature-list">
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <strong>{{PAIN POINT 1 — short}}</strong>
+          <span class="desc">{{one sentence expanding on it}}</span>
+        </div>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <strong>{{PAIN POINT 2 — short}}</strong>
+          <span class="desc">{{one sentence expanding on it}}</span>
+        </div>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <strong>{{PAIN POINT 3 — short}}</strong>
+          <span class="desc">{{one sentence expanding on it}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <h2>The solution</h2>
+    <p>{{1-2 paragraphs introducing the book as the fix}}</p>
+    <p><strong>{{FULL BOOK TITLE}}</strong> — {{chapter count}} chapters, {{prompt/resource count}}, covering {{brief list of what it covers}}.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <h2>What's inside</h2>
+    <ul class="feature-list">
+      <li><span class="check">✓</span><div><strong>{{FEATURE 1}}</strong><span class="desc">{{what it does for the reader}}</span></div></li>
+      <li><span class="check">✓</span><div><strong>{{FEATURE 2}}</strong><span class="desc">{{what it does for the reader}}</span></div></li>
+      <li><span class="check">✓</span><div><strong>{{FEATURE 3}}</strong><span class="desc">{{what it does for the reader}}</span></div></li>
+      <li><span class="check">✓</span><div><strong>{{FEATURE 4}}</strong><span class="desc">{{what it does for the reader}}</span></div></li>
+      <!-- add or remove <li> items as needed -->
+    </ul>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <h2>Who this is for</h2>
+    <p>{{1 paragraph describing the ideal reader/buyer}}</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <h2>Free bonuses</h2>
+    <!-- duplicate this .bonus-card block for each bonus, or delete the section if there are none -->
+    <div class="bonus-card">
+      <div class="bonus-label">Bonus #1</div>
+      <strong>{{BONUS TITLE}}</strong>
+      <p>{{what it is}}</p>
+      <div class="bonus-value">A ₹{{VALUE}} value — yours free</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+    <div class="guarantee-box">
+      <h3>30-Day Money-Back Guarantee</h3>
+      <p>{{your guarantee copy — keep it consistent with your other ebooks}}</p>
+    </div>
+  </div>
+</section>
+
+<section id="buy" class="price-box">
+  <div class="wrap">
+    <p>{{ONE LINE — what they get when they buy}}</p>
+    <div class="price">₹{{PRICE}}</div>
+
+    <!--
+      RAZORPAY PAYMENT BUTTON GOES HERE — paste this product's
+      embed snippet from Razorpay Dashboard → Payment Buttons.
+    -->
+
+    <span class="fineprint">Secured by Razorpay · Instant digital download · 30-day money-back guarantee</span>
+  </div>
+</section>
+
+<!-- Optional: delete this <p> if there's no trademark/affiliation disclaimer needed for this ebook -->
+<p class="disclaimer wrap">{{DISCLAIMER TEXT IF NEEDED, e.g. trademark notices}}</p>
+
+<footer class="site-footer">
+  <div class="wrap">
+    &copy; 2026 ZeroBusyWork. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
