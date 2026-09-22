@@ -91,3 +91,5 @@ homepage → push. No coding beyond editing text between the existing HTML tags.
   an upcoming ebook before it's ready — see the example in `/index.html`.
 - Keep ebook slugs short and readable — they're the actual page URL, e.g.
   `zerobusyworkbooks.com/ebooks/copilot-for-sales/`.
+
+<!-- deploy check -->
