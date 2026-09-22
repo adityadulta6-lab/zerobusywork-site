@@ -39,30 +39,42 @@ To add a new ebook each month:
 1. Duplicate the /ebooks/_template/ folder, rename it to
 your new ebook's slug (e.g. /ebooks/copilot-for-sales/).
 2. Fill in that page (see instructions inside it).
-3. Copy one of the <a class="book-card"> blocks below,
-update the href, eyebrow, title, blurb and price.
+3. Add a cover image at /assets/covers/{{slug}}.jpg (portrait,
+roughly 3:4) and reference it from both the homepage card
+and that ebook's hero section.
+4. Copy one of the <a class="book-card"> blocks below,
+update the href, cover image, eyebrow, title, blurb and price.
 ============================================================
 -->
 
 <a class="book-card" href="/ebooks/hr-copilot-for-hr-admin/">
+<img class="cover" src="/assets/covers/hr-copilot-for-hr-admin.jpg" alt="Microsoft Copilot for HR & Admin — cover">
+<div class="card-body">
 <div class="eyebrow">For HR & Admin</div>
 <h2>Microsoft Copilot for HR &amp; Admin</h2>
 <p>24+ copy-paste prompts that hand your repetitive HR tasks to AI — job descriptions, policy rewrites, people analytics, and more.</p>
 <div class="price">₹99</div>
+</div>
 </a>
 
 <a class="book-card" href="/ebooks/ai-workflows-for-therapists/">
+<img class="cover" src="/assets/covers/ai-workflows-for-therapists.jpg" alt="AI Workflows for Therapists — cover">
+<div class="card-body">
 <div class="eyebrow">For LCSW, LMFT, LPC, and Counselors</div>
 <h2>AI Workflows for Therapists</h2>
 <p>120+ HIPAA-aware AI prompts for clinical notes, treatment plans, and documentation — built to cut charting time by 60–70%.</p>
 <div class="price">₹299</div>
+</div>
 </a>
 
 <a class="book-card" href="/ebooks/neem-karoli-baba-99-stories/">
+<img class="cover" src="/assets/covers/neem-karoli-baba-99-stories.jpg" alt="Alaukik Leela: The 99 Miracles of Neem Karoli Baba — cover">
+<div class="card-body">
 <div class="eyebrow">For Devotees &amp; Seekers</div>
 <h2>Alaukik Leela: The 99 Miracles of Neem Karoli Baba</h2>
 <p>Discover the extraordinary divine play of the Himalayan saint. 99 true-life stories of grace, retold in fresh words from devotees' published accounts.</p>
 <div class="price">₹149</div>
+</div>
 </a>
 
 </div>
